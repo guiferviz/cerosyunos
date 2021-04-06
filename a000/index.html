@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title>Max algorithm</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: #4d4747;
+        font-family: 'Liberation serif', serif;
+      }
+
+      #audio {
+        position: fixed;
+        width: 100%;
+        height: 5vh;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="video-set-container"></div>
+    <script src="./a000.min.js"></script>
+    <script>
+      const videoSet = new a000.ExampleNANDYLasHojas();
+      videoSet.init('video-set-container');
+      videoSet.create();
+      videoSet.timeline.play();
+      videoSet.resize(window.innerWidth, window.innerHeight);
+      videoSet.autoUpdate();
+    </script>
+  </body>
+</html>
