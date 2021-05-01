@@ -12,13 +12,6 @@
         background: #4d4747;
         font-family: 'Liberation serif', serif;
       }
-
-      #audio {
-        position: fixed;
-        width: 100%;
-        height: 5vh;
-        bottom: 0;
-      }
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110215330-1"></script>
@@ -37,7 +30,7 @@
       const videoSet = new a000.ExampleNANDYLasHojas();
       videoSet.init('video-set-container');
       videoSet.create();
-      videoSet.timeline.play();
+      videoSet.timeline.play(0);
       videoSet.resize(window.innerWidth, window.innerHeight);
       videoSet.autoUpdate();
     </script>
