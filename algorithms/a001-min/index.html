@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title>Min algorithm</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: #4d4747;
+        font-family: 'Liberation serif', serif;
+      }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110215330-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-110215330-1');
+    </script>
+  </head>
+  <body>
+    <div id="video-set-container"></div>
+    <script src="./a001.min.js"></script>
+    <script>
+      const videoSet = new a001.ExampleNANDYLasHojas();
+      videoSet.init('video-set-container');
+      videoSet.create();
+      videoSet.timeline.play();
+      videoSet.resize(window.innerWidth, window.innerHeight);
+      videoSet.autoUpdate();
+    </script>
+  </body>
+</html>
